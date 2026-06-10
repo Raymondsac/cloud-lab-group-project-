@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Alpha — About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><i class="fa-solid fa-rocket"></i>Team Alpha</a>
+      
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="about.html" class="active"><i class="fa-solid fa-user"></i>About</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <main>
+
+      <section class="hero">
+        <h1>About Our Team</h1>
+        <p>
+          We are a group of passionate students enrolled in the <strong>Web Technologies</strong> course,
+          working together to design and build this group website project.
+        </p>
+      </section>
+
+      <div class="info-box">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Group Details</h2>
+        <p>
+          <strong>Group Name:</strong> Team Alpha &nbsp;|&nbsp;
+          <strong>Course:</strong> Web Technologies &nbsp;|&nbsp;
+          <strong>Year:</strong> 2025/2026
+        </p>
+      </div>
+
+      <h2 class="section-title">Group Members</h2>
+      <p class="section-subtitle">The people who made this project happen.</p>
+
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-avatar">OY</div>
+          <h3>Yakpa Obed</h3>
+          <p>Project Lead &amp; HTML Structure</p>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar">EO</div>
+          <h3>Ella Opare</h3>
+          <p>Code Editor</p>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar">RS</div>
+          <h3>Raymond Sackitey</h3>
+          <p>GitHub Repository Manager</p>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar">AM</div>
+          <h3>Ali Musah</h3>
+          <p>JCSS Styling &amp; Layout</p>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar">AB</div>
+          <h3>Andy Bonney</h3>
+          <p>Content &amp; Research</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">About the Project</h2>
+      <p class="section-subtitle">Our goals, approach, and what we learned.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Our Goal</h3>
+          <p>Build a fully functional, multi-page static website that demonstrates core web development skills in HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3>Our Approach</h3>
+          <p>We divided responsibilities by skillset, held weekly check-ins, and used version control to coordinate our work effectively.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+          <h3>What We Learned</h3>
+          <p>From semantic HTML and responsive CSS to form validation and team communication — this project was a hands-on learning experience.</p>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Team Alpha &mdash; Web Technologies Course Project</p>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+      
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    </script>
+  </body>
+</html>

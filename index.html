@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Alpha — Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+      <nav>
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo"><i class="fa-solid fa-rocket"></i>Team Alpha</a>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+
+        <section class="hero">
+          <h1>Welcome to Team Alpha</h1>
+          <p>
+            A collaborative student group dedicated to building modern web experiences
+            as part of our <strong>Web Technologies</strong> course project.
+          </p>
+          <a href="about.html" class="btn">Meet the Team &rarr;</a>
+        </section>
+
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+          alt="Group of students collaborating on laptops"
+        />
+
+        <div class="info-box">
+          <h2><i class="fa-solid fa-graduation-cap"></i> Course Information</h2>
+          <p>
+            <strong>Course:</strong> Web Technologies &nbsp;|&nbsp;
+            <strong>Semester:</strong> 2025/2026 &nbsp;|&nbsp;
+            <strong>Group:</strong> Alpha
+          </p>
+        </div>
+
+        <h2 class="section-title">Our Project</h2>
+        <p class="section-subtitle">What we set out to build and why it matters.</p>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Modern Web Design</h3>
+            <p>We apply current best practices in HTML5, CSS3, and JavaScript to create clean, accessible interfaces.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>Team Collaboration</h3>
+            <p>Each member contributes their strengths — from layout and styling to scripting and content.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon"><i class="fa-solid fa-mobile-alt"></i></div>
+            <h3>Responsive Design</h3>
+            <p>Our site is fully responsive, adapting gracefully to desktop, tablet, and mobile screens.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 24px;">
+          <div class="card-icon"><i class="fa-solid fa-paper"></i></div>
+          <h3>Project Description</h3>
+          <p>
+            This website was created as a group assignment for the Web Technologies course. The goal is to
+            demonstrate practical skills in HTML, CSS, and JavaScript by building a multi-page static website
+            that is well-structured, visually consistent, and easy to navigate. The project covers semantic
+            markup, responsive layouts, form handling, and basic interactivity.
+          </p>
+        </div>
+
+      </main>
+
+    <footer>
+      <p>&copy; 2026 Team Alpha &mdash; Web Technologies Course Project</p>
+    
+    ..</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+    
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+  </script>
+  </body>
+</html>
